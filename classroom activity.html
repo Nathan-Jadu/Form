@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TAXI REG. FORM</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#submit").mousedown(function(){
+				alert("Your form has been submitted");
+			});
+		});
+	</script>
+	<style type="text/css">
+		.formm{
+			font-family: Algerian;
+			
+
+		}
+	</style>	
+</head>
+<body>
+	<div class="formm">
+	<h1 style="text-align: center;"><span style="background-color: red">Taxi Registration Form</span></h1>
+	<form autocomplete="on" novalidate >
+		Name :<input type="text" name="Name"> <br><br>
+		First Name(readonly):<input type="text" name="fname" readonly><br><br>
+		Last Name (disabled):<input type="text" name="Lastname" disabled><br><br>
+		Surname	(autofocus):<input type="text" name="Surname" autofocus><br><br>
+		Address:<input type="text" required><br><br>
+		Phone:<input type="text" name="Phone" maxlength="10"> <br><br>
+		Time :<input type="time" name="time"> <br><br>
+		Date of Travel :<input type="date" name="date"><br><br>
+		Email:<input type="Email" name="Email"> <br><br>
+		Number of persons:<input type="number" name="no.of persons"><br><br>
+		Your Adhar :<input type="file" name="your adhar"><br><br>
+
+	Which Taxi Do you require? : <br> <pre><input type="radio" name="Taxi" value="Car"> Car </pre>
+	<pre><input type="radio" name="Taxi" value="Bus"> Bus </pre>
+	<pre><input type="radio" name="Taxi" value="Van"> Van </pre>
+	<pre><input type="radio" name="Taxi" value="Volvo"> Volvo </pre>
+	<br><br>
+	Extras : <br> <pre><input type="checkbox" name="AC"> AC Theater </pre>
+	<pre><input type="checkbox" name="Seat"> Seating </pre>
+	<pre><input type="checkbox" name="Baby seat"> Baby seat </pre>
+	<pre><input type="checkbox" name="Sleeper"> Sleeper </pre>
+	Commends: <input type="textarea" name="Commends"><br>
+	<button id="submit">Submit</button>
+	</form>
+</div>
+
+</body>
+</html>
